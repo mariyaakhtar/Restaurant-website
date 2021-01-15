@@ -44,7 +44,7 @@ nav {
 }
 
 nav a {
-	margin: 10px;
+	margin: 1em;
 	padding-bottom: 2px;
 }
 
@@ -103,7 +103,7 @@ nav a.active {
 
 .brand, .topic {
 	letter-spacing: 15px;
-	margin-top: -80px;
+	margin-top: -3em;
 	font-weight: 900;
 	font-size: 35px;
 }
@@ -113,8 +113,8 @@ header .symbol {
 	font-size: 20px;
 	display: block;
 	position: relative;
-	margin-top: -5px;
-	margin-bottom: 5px;
+	margin-top: -0.31em;
+	margin-bottom: 0.31em;
 }
 
 x-sizing: inherit; 
@@ -145,12 +145,12 @@ header .symbol:before, header .symbol:after {
 }
 
 header .symbol:before {
-	margin-right: 10px;
+	margin-right: 0.625em;
 	left: 0;
 }
 
 header .symbol:after {
-	margin-left: 10px;
+	margin-left: 0.625em;
 	right: 0;
 }
 
@@ -163,13 +163,13 @@ header h2 {
 /* Main */
 
 section#about, section#menu, section#reservation {
-	margin-top: 50px;
-	margin-bottom: 40px;
+	margin-top: 3.125em;
+	margin-bottom: 2.5em;
 }
 
 .content {
 	box-sizing: border-box;
-	padding: 30px;
+	padding: 1.875em;
 }
 
 .content h1 {
@@ -178,7 +178,7 @@ section#about, section#menu, section#reservation {
 }
 
 .content h2 {
-	margin-top: 10px;
+	margin-top: 0.625em;
 }
 
 
@@ -213,7 +213,7 @@ div.gallery img {
 /* Dividers */
 
 .divider {
-	height: 500px;
+	height: 70vh;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
@@ -234,12 +234,12 @@ main section:nth-of-type(3) {
 }
 
 .blink span{
-		width:200px;
-		height: 50px;
+		width:13vw;
+		height: 7vh;
 	    background-color: #101935;
-		padding: 15px;	
+		padding: 1em;	
 		text-align: center;
-		line-height: 50px;
+		line-height: 7vh;
 	}
 	span{
 		font-size: 25px;
@@ -263,7 +263,7 @@ main section:nth-of-type(3) {
 #info {
 	display: flex;
 	justify-content: center;
-	min-height: 200px;
+	min-height: 27.7vh;
 }
 
 #info h2 {
@@ -295,7 +295,7 @@ main section:nth-of-type(3) {
 }
 
 .address_container, .open_container {
-	margin-top: 20px;
+	margin-top: 1.25em;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;

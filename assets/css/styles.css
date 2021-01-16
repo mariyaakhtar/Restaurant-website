@@ -1,12 +1,12 @@
 body, h2, p {
 	font-family: 'Montserrat', sans-serif, Calibri;
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 h1 {
 	color: #BD2C0F;
 	font-family: 'Montserrat', sans-serif, Calibri;
-	font-size: 40px;
+	font-size: 2rem;
 }
 header {
 	height: 50vh;
@@ -40,7 +40,7 @@ footer {
 /* Header */
 
 nav {
-	font-size: 17px;
+	font-size: 0.83rem;
 }
 
 nav a {
@@ -94,6 +94,15 @@ nav a.active {
 	color: #f9f9f9;
 }
 
+.welcome_container_2 {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #f9f9f9;
+}
+
 .highlight {
 	color: #BD2C0F;
 	font-family: 'Allura', cursive, Calibri, sans-serif;
@@ -105,12 +114,12 @@ nav a.active {
 	letter-spacing: 15px;
 	margin-top: -3em;
 	font-weight: 900;
-	font-size: 35px;
+	font-size: 2.18rem;
 }
 
 header .symbol {
 	color: #BD2C0F;
-	font-size: 20px;
+	font-size: 1.25rem;
 	display: block;
 	position: relative;
 	margin-top: -0.31em;
@@ -129,7 +138,7 @@ body {
   font-family: "Nunito", sans-serif;
   color: #333;
   font-weight: 300;
-  line-height: 1.6; 
+  line-height: 1.45; 
 }
 
 
@@ -156,7 +165,7 @@ header .symbol:after {
 
 
 header h2 {
-	font-size: 15px;
+	font-size: 1rem;
 	letter-spacing: 5px;
 }
 
@@ -173,7 +182,7 @@ section#about, section#menu, section#reservation {
 }
 
 .content h1 {
-	font-size: 35px; 
+	font-size: 2.18rem; 
 	color: #101935;
 }
 
@@ -242,7 +251,7 @@ main section:nth-of-type(3) {
 		line-height: 7vh;
 	}
 	span{
-		font-size: 25px;
+		font-size: 1.56rem;
 		font-family: sans-serif;
 		color: #EDF2EF;
 		animation: blink 2s linear infinite;
@@ -269,11 +278,11 @@ main section:nth-of-type(3) {
 #info h2 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 #info p {
-	font-size: 13px;
+	font-size: 0.8rem;
 }
 
 #info > div {
@@ -302,7 +311,7 @@ main section:nth-of-type(3) {
 }
 
 #copyright p {
-	font-size: 12px;
+	font-size: 0.75rem;
 }
 
 #copyright {
@@ -314,7 +323,7 @@ main section:nth-of-type(3) {
 
 .dot {
 	padding: 0 10px;
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 #top {
@@ -335,7 +344,7 @@ main section:nth-of-type(3) {
 }
 
 #top p {
-	font-size: 12px;
+	font-size: 0.75rem;
 }
 
 #top a {
@@ -344,179 +353,6 @@ main section:nth-of-type(3) {
 
 p#arrow {
 	transform: rotate(90deg);
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
-/* Media queries */
-
-@media all and (max-width: 575px) {
-	.divider {
-		height: 400px;
-	}
-	
-	#copyright p {
-		font-size: 10px;
-	}
-	
-	#info {
-		flex-flow: column nowrap;
-	}
-	
-	#locations, div#hours {
-		width: 100%;
-		padding: 0;
-		text-align: center;
-	}
-	
-	div#locations, .address_container {
-		flex-flow: column nowrap;
-	}
-	
-	div#hours {
-		margin-top: 30px;
-	}
-	
-	div#locations {
-		margin-top: 20px;
-	}
-	
-	.address1 {
-		padding-right: 0;
-	}
-}
-
-@media all and (max-width: 700px) {
-	
-	nav {
-		display: none;
-	}
-	
-	#open_menu.show, #close_menu.show {
-		display: block;
-		z-index: 5;
-	}
-	
-	#logo {
-		z-index: 5;
-	}
-	
-	.container.show_menu {
-		width: 100%;
-		height: 100vh;
-		/* we need these for when the page is in the welcome section, where the fixed_menu class is no longer active */
-		padding: 10px 40px;
-		position: fixed;
-		top: 0;
-		z-index: 5;
-		/* resetting the following ones */
-		transition: none;
-		border-bottom: none;
-		background-color: rgba(0, 0, 0, .9);
-		align-items: flex-start;
-	}
-	
-	nav.show_menu { 
-		position: absolute;
-		height: 100vh;
-		width: 100vw;
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: center;
-		align-items: center;
-		/* because the parent container has some padding, we need to get it out */
-		margin: -10px 0 0 -40px;		
-	}
-	
-	nav.show_menu a {
-		margin-bottom: 10px;
-	}
-	
-	nav.show_menu a:nth-of-type(5) {
-		margin-right: 10px;
-	}
-
-}
-
-@media all and (max-width: 767px) {
-	
-	section#about, section#menu, section#reservation {
-		margin-top: 20px;
-		margin-bottom: 20px;
-		display: flex;
-		flex-direction: column;
-	}
-	
-	.content, .img_container {
-		width: 100%;	
-	}
-	
-	section#about {
-		margin-bottom: 40px;
-	}
-	
-	section#menu {
-		margin-top: 40px;
-	}
-	
-	section#reservation {
-		margin-bottom: 60px;
-	}
-	
-	.open_container div:nth-of-type(2) {
-		margin-top: 20px;
-	}
-	
-	#locations {
-		align-self: flex-start;
-	}
-	
-	.open_container {
-		flex-flow: column nowrap;
-	}
-	
-	#info {
-		justify-content: center;
-	}
-	
-	#hours {
-		width: 28%;
-		padding-left: 20%;
-	}
-}
-
-@media all and (max-width: 990px) {
-	#copyright p {
-		font-size: 12px;
-	}
-	
-	#copyright {
-		flex-flow: column nowrap;
-		padding: 25px 0;
-	}
-	
-	#copyright div {
-		width: 80%;
-		text-align: center;
-	}
-}
-
-@media all and (min-width: 768px) and (max-width: 990px) {
-	section#about, section#menu, section#reservation {
-		margin-top: 40px;
-		margin-bottom: 40px;
-	}
-}
-
-@media all and (max-width: 1097px) {
-	.open_container div:nth-of-type(3) {
-		width: 100%;
-	}
-	
-	.address2, .open_container div:nth-of-type(3) {
-		margin-top: 20px;
-	}
-	
-	#info {
-		padding: 40px 0;
-	}
-}
